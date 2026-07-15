@@ -1,0 +1,33 @@
+name: CI Tests
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v4
+
+    - name: Setup Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Verify Environment
+      run: |
+        python --version
+        echo "No third-party packages needed (Standard Library only)."
+
+    - name: Run Test Suite
+      run: |
+        python verify.py
+
+    - name: Run Registry Schema Validation
+      run: |
+        python -m inventory.validate_inventory

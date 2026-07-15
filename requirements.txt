@@ -1,0 +1,4 @@
+# Hydra Brain v0.1 Requirements
+# This project is built using only the Python standard library.
+# No external dependencies are required to run the main application.
+# Python 3.12+ is recommended.

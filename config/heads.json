@@ -1,0 +1,16 @@
+{
+  "heads": [
+    {
+      "id": "north-mini",
+      "provider": "openrouter",
+      "model": "nvidia/nemotron-3-nano",
+      "priority": 1
+    },
+    {
+      "id": "gemma",
+      "provider": "openrouter",
+      "model": "google/gemma-4-31b-it",
+      "priority": 2
+    }
+  ]
+}
