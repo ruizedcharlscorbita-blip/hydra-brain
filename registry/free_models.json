@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-15T23:50:32.646659",
+  "generated_at": "2026-07-16T00:54:16.858376",
   "provider": "OpenRouter",
   "models": [
     {
@@ -63,11 +63,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 226,
+        "latency_ms": 212,
+        "last_checked": "2026-07-16T00:54:16.570530",
+        "average_tokens_per_second": 72,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.483676",
+            "status": "healthy",
+            "latency_ms": 138,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.599638",
+            "status": "healthy",
+            "latency_ms": 107,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.320662",
+            "status": "healthy",
+            "latency_ms": 183,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.570530",
+            "status": "healthy",
+            "latency_ms": 212,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.408595",
-        "average_tokens_per_second": 66,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -133,11 +168,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 230,
+        "latency_ms": 166,
+        "last_checked": "2026-07-16T00:54:16.599515",
+        "average_tokens_per_second": 96,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.494672",
+            "status": "healthy",
+            "latency_ms": 214,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.629620",
+            "status": "healthy",
+            "latency_ms": 132,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.341649",
+            "status": "healthy",
+            "latency_ms": 165,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.599515",
+            "status": "healthy",
+            "latency_ms": 166,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.419095",
-        "average_tokens_per_second": 80,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -210,11 +280,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 133,
+        "latency_ms": 100,
+        "last_checked": "2026-07-16T00:54:16.610506",
+        "average_tokens_per_second": 60,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.505663",
+            "status": "healthy",
+            "latency_ms": 151,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.651604",
+            "status": "healthy",
+            "latency_ms": 249,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.354327",
+            "status": "healthy",
+            "latency_ms": 169,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.610506",
+            "status": "healthy",
+            "latency_ms": 100,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.430071",
-        "average_tokens_per_second": 93,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -279,11 +384,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 239,
+        "latency_ms": 237,
+        "last_checked": "2026-07-16T00:54:16.622012",
+        "average_tokens_per_second": 77,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.534157",
+            "status": "healthy",
+            "latency_ms": 241,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.665847",
+            "status": "healthy",
+            "latency_ms": 178,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.368830",
+            "status": "healthy",
+            "latency_ms": 182,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.622012",
+            "status": "healthy",
+            "latency_ms": 237,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.440793",
-        "average_tokens_per_second": 79,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -344,11 +484,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 231,
+        "latency_ms": 185,
+        "last_checked": "2026-07-16T00:54:16.634004",
+        "average_tokens_per_second": 75,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.546724",
+            "status": "healthy",
+            "latency_ms": 124,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.679840",
+            "status": "healthy",
+            "latency_ms": 176,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.382842",
+            "status": "healthy",
+            "latency_ms": 190,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.634004",
+            "status": "healthy",
+            "latency_ms": 185,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.451561",
-        "average_tokens_per_second": 61,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -409,11 +584,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 134,
+        "latency_ms": 218,
+        "last_checked": "2026-07-16T00:54:16.645997",
+        "average_tokens_per_second": 78,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.563224",
+            "status": "healthy",
+            "latency_ms": 136,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.698828",
+            "status": "healthy",
+            "latency_ms": 108,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.393342",
+            "status": "healthy",
+            "latency_ms": 186,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.645997",
+            "status": "healthy",
+            "latency_ms": 218,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.462284",
-        "average_tokens_per_second": 74,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -474,11 +684,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 233,
+        "latency_ms": 236,
+        "last_checked": "2026-07-16T00:54:16.660988",
+        "average_tokens_per_second": 96,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.587229",
+            "status": "healthy",
+            "latency_ms": 218,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.721811",
+            "status": "healthy",
+            "latency_ms": 131,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.404348",
+            "status": "healthy",
+            "latency_ms": 205,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.660988",
+            "status": "healthy",
+            "latency_ms": 236,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.473447",
-        "average_tokens_per_second": 63,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -541,11 +786,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 216,
+        "latency_ms": 241,
+        "last_checked": "2026-07-16T00:54:16.672981",
+        "average_tokens_per_second": 81,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.608242",
+            "status": "healthy",
+            "latency_ms": 209,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.757790",
+            "status": "healthy",
+            "latency_ms": 203,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.415341",
+            "status": "healthy",
+            "latency_ms": 105,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.672981",
+            "status": "healthy",
+            "latency_ms": 241,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.484572",
-        "average_tokens_per_second": 76,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -606,11 +886,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 202,
+        "latency_ms": 231,
+        "last_checked": "2026-07-16T00:54:16.689970",
+        "average_tokens_per_second": 91,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.620745",
+            "status": "healthy",
+            "latency_ms": 223,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.771782",
+            "status": "healthy",
+            "latency_ms": 185,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.426847",
+            "status": "healthy",
+            "latency_ms": 247,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.689970",
+            "status": "healthy",
+            "latency_ms": 231,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.495724",
-        "average_tokens_per_second": 62,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -672,11 +987,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 124,
+        "latency_ms": 193,
+        "last_checked": "2026-07-16T00:54:16.701962",
+        "average_tokens_per_second": 93,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.633738",
+            "status": "healthy",
+            "latency_ms": 233,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.788286",
+            "status": "healthy",
+            "latency_ms": 150,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.437839",
+            "status": "healthy",
+            "latency_ms": 192,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.701962",
+            "status": "healthy",
+            "latency_ms": 193,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.506710",
-        "average_tokens_per_second": 84,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -741,11 +1091,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 249,
+        "latency_ms": 109,
+        "last_checked": "2026-07-16T00:54:16.717954",
+        "average_tokens_per_second": 69,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.657723",
+            "status": "healthy",
+            "latency_ms": 199,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.801790",
+            "status": "healthy",
+            "latency_ms": 243,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.448834",
+            "status": "healthy",
+            "latency_ms": 205,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.717954",
+            "status": "healthy",
+            "latency_ms": 109,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.517710",
-        "average_tokens_per_second": 89,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -810,11 +1195,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 230,
+        "latency_ms": 224,
+        "last_checked": "2026-07-16T00:54:16.729684",
+        "average_tokens_per_second": 74,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.670079",
+            "status": "healthy",
+            "latency_ms": 242,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.821026",
+            "status": "healthy",
+            "latency_ms": 134,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.467821",
+            "status": "healthy",
+            "latency_ms": 239,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.729684",
+            "status": "healthy",
+            "latency_ms": 224,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.528400",
-        "average_tokens_per_second": 90,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -877,11 +1297,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 233,
+        "latency_ms": 115,
+        "last_checked": "2026-07-16T00:54:16.740678",
+        "average_tokens_per_second": 65,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.700577",
+            "status": "healthy",
+            "latency_ms": 236,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.840014",
+            "status": "healthy",
+            "latency_ms": 188,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.481813",
+            "status": "healthy",
+            "latency_ms": 242,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.740678",
+            "status": "healthy",
+            "latency_ms": 115,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.538910",
-        "average_tokens_per_second": 93,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -942,11 +1397,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 214,
+        "latency_ms": 155,
+        "last_checked": "2026-07-16T00:54:16.754669",
+        "average_tokens_per_second": 65,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.715567",
+            "status": "healthy",
+            "latency_ms": 229,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.872994",
+            "status": "healthy",
+            "latency_ms": 217,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.496313",
+            "status": "healthy",
+            "latency_ms": 172,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.754669",
+            "status": "healthy",
+            "latency_ms": 155,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.549910",
-        "average_tokens_per_second": 74,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1010,11 +1500,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 184,
+        "latency_ms": 121,
+        "last_checked": "2026-07-16T00:54:16.777168",
+        "average_tokens_per_second": 71,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.728558",
+            "status": "healthy",
+            "latency_ms": 192,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.891982",
+            "status": "healthy",
+            "latency_ms": 196,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.508307",
+            "status": "healthy",
+            "latency_ms": 243,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.777168",
+            "status": "healthy",
+            "latency_ms": 121,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.560606",
-        "average_tokens_per_second": 64,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1078,11 +1603,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 183,
-        "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.571324",
+        "latency_ms": 173,
+        "last_checked": "2026-07-16T00:54:16.790160",
         "average_tokens_per_second": 93,
-        "last_error": null
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.740475",
+            "status": "healthy",
+            "latency_ms": 120,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.911969",
+            "status": "healthy",
+            "latency_ms": 234,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.534290",
+            "status": "healthy",
+            "latency_ms": 127,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.790160",
+            "status": "healthy",
+            "latency_ms": 173,
+            "http_status": 200,
+            "error": null
+          }
+        ],
+        "success_rate": 1.0,
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1154,11 +1714,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 217,
+        "latency_ms": 249,
+        "last_checked": "2026-07-16T00:54:16.803289",
+        "average_tokens_per_second": 69,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.776963",
+            "status": "healthy",
+            "latency_ms": 248,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.940954",
+            "status": "healthy",
+            "latency_ms": 157,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.547298",
+            "status": "healthy",
+            "latency_ms": 138,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.803289",
+            "status": "healthy",
+            "latency_ms": 249,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.581571",
-        "average_tokens_per_second": 67,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1231,11 +1826,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 194,
+        "latency_ms": 213,
+        "last_checked": "2026-07-16T00:54:16.818279",
+        "average_tokens_per_second": 73,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.795464",
+            "status": "healthy",
+            "latency_ms": 130,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.955945",
+            "status": "healthy",
+            "latency_ms": 123,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.559290",
+            "status": "healthy",
+            "latency_ms": 180,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.818279",
+            "status": "healthy",
+            "latency_ms": 213,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.592567",
-        "average_tokens_per_second": 74,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1295,11 +1925,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 204,
+        "latency_ms": 115,
+        "last_checked": "2026-07-16T00:54:16.830272",
+        "average_tokens_per_second": 65,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.818964",
+            "status": "healthy",
+            "latency_ms": 154,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:13.983794",
+            "status": "healthy",
+            "latency_ms": 128,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.570281",
+            "status": "healthy",
+            "latency_ms": 146,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.830272",
+            "status": "healthy",
+            "latency_ms": 115,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.602731",
-        "average_tokens_per_second": 64,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1359,11 +2024,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 101,
+        "latency_ms": 192,
+        "last_checked": "2026-07-16T00:54:16.841876",
+        "average_tokens_per_second": 62,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.834954",
+            "status": "healthy",
+            "latency_ms": 200,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:14.000783",
+            "status": "healthy",
+            "latency_ms": 142,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.583273",
+            "status": "healthy",
+            "latency_ms": 195,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.841876",
+            "status": "healthy",
+            "latency_ms": 192,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.613747",
-        "average_tokens_per_second": 61,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     },
     {
@@ -1425,12 +2125,40 @@
         "streaming": null
       },
       "health": {
-        "status": "healthy",
-        "latency_ms": 224,
-        "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.624684",
-        "average_tokens_per_second": 94,
-        "last_error": null
+        "status": "unavailable",
+        "latency_ms": 2000,
+        "last_checked": "2026-07-16T00:54:15.594268",
+        "average_tokens_per_second": 60,
+        "last_error": "Simulated test error",
+        "consecutive_successes": 0,
+        "consecutive_failures": 3,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.846944",
+            "status": "degraded",
+            "latency_ms": 2000,
+            "http_status": 500,
+            "error": "Simulated test error"
+          },
+          {
+            "timestamp": "2026-07-16T00:54:14.016773",
+            "status": "degraded",
+            "latency_ms": 2000,
+            "http_status": 500,
+            "error": "Simulated test error"
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.594268",
+            "status": "unavailable",
+            "latency_ms": 2000,
+            "http_status": 500,
+            "error": "Simulated test error"
+          }
+        ],
+        "success_rate": 0.0,
+        "circuit": "open",
+        "opened_at": "2026-07-16T00:54:15.594268",
+        "retry_after": "2026-07-16T01:04:15.594268"
       }
     },
     {
@@ -1494,12 +2222,40 @@
         "streaming": null
       },
       "health": {
-        "status": "healthy",
-        "latency_ms": 166,
-        "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.635675",
-        "average_tokens_per_second": 96,
-        "last_error": null
+        "status": "unavailable",
+        "latency_ms": 2000,
+        "last_checked": "2026-07-16T00:54:15.605260",
+        "average_tokens_per_second": 72,
+        "last_error": "Simulated test error",
+        "consecutive_successes": 0,
+        "consecutive_failures": 3,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.863934",
+            "status": "degraded",
+            "latency_ms": 2000,
+            "http_status": 500,
+            "error": "Simulated test error"
+          },
+          {
+            "timestamp": "2026-07-16T00:54:14.040271",
+            "status": "degraded",
+            "latency_ms": 2000,
+            "http_status": 500,
+            "error": "Simulated test error"
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.605260",
+            "status": "unavailable",
+            "latency_ms": 2000,
+            "http_status": 500,
+            "error": "Simulated test error"
+          }
+        ],
+        "success_rate": 0.0,
+        "circuit": "open",
+        "opened_at": "2026-07-16T00:54:15.605260",
+        "retry_after": "2026-07-16T01:04:15.605260"
       }
     },
     {
@@ -1568,11 +2324,46 @@
       },
       "health": {
         "status": "healthy",
-        "latency_ms": 217,
+        "latency_ms": 117,
+        "last_checked": "2026-07-16T00:54:16.853374",
+        "average_tokens_per_second": 67,
+        "last_error": null,
+        "consecutive_successes": 6,
+        "consecutive_failures": 0,
+        "history": [
+          {
+            "timestamp": "2026-07-16T00:54:11.887920",
+            "status": "healthy",
+            "latency_ms": 203,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:14.059772",
+            "status": "healthy",
+            "latency_ms": 208,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:15.616253",
+            "status": "healthy",
+            "latency_ms": 115,
+            "http_status": 200,
+            "error": null
+          },
+          {
+            "timestamp": "2026-07-16T00:54:16.853374",
+            "status": "healthy",
+            "latency_ms": 117,
+            "http_status": 200,
+            "error": null
+          }
+        ],
         "success_rate": 1.0,
-        "last_checked": "2026-07-15T23:50:32.646659",
-        "average_tokens_per_second": 87,
-        "last_error": null
+        "circuit": "closed",
+        "opened_at": null,
+        "retry_after": null
       }
     }
   ]

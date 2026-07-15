@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [0.2.0] - 2026-07-16
+
+### Added
+- **Live Health Pings:** Upgraded `health/monitor.py` to perform active completions pings using `max_tokens=1` to test real endpoint status.
+- **Provider Error Diagnostics:** Captures and classifies specific HTTP errors (429 Rate Limits, 502 Bad Gateway, 401 Unauthorized) and records status values (`rate_limited`, `degraded`, `unavailable`).
+- **Data Boundary Safety:** Ensures updates modify only the `"health"` subkey of each registry model, conforming to data ownership specs.
+- **Fallback Mocks:** Retains stable mock/simulated checks when `HYDRA_MOCK=true` or when no API credentials are configured.
+
 ## [0.1.0] - 2026-07-15
 
 ### Added

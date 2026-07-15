@@ -144,6 +144,58 @@ def run_validation() -> None:
             print(f"Error: Model '{model_id}' has invalid or missing 'free' flag.")
             sys.exit(1)
             
+        # Validate capabilities block
+        capabilities = model.get("capabilities")
+        if not isinstance(capabilities, dict):
+            print(f"Error: Model '{model_id}' has missing or invalid 'capabilities' block.")
+            sys.exit(1)
+            
+        # Validate health block
+        health = model.get("health")
+        if not isinstance(health, dict):
+            print(f"Error: Model '{model_id}' has missing or invalid 'health' block.")
+            sys.exit(1)
+            
+        valid_statuses = {"unknown", "healthy", "rate_limited", "degraded", "unavailable"}
+        status = health.get("status")
+        if status not in valid_statuses:
+            print(f"Error: Model '{model_id}' has invalid health status: '{status}'")
+            sys.exit(1)
+            
+        consec_succ = health.get("consecutive_successes")
+        if consec_succ is not None and (not isinstance(consec_succ, int) or consec_succ < 0):
+            print(f"Error: Model '{model_id}' has invalid 'consecutive_successes': {consec_succ}")
+            sys.exit(1)
+            
+        consec_fail = health.get("consecutive_failures")
+        if consec_fail is not None and (not isinstance(consec_fail, int) or consec_fail < 0):
+            print(f"Error: Model '{model_id}' has invalid 'consecutive_failures': {consec_fail}")
+            sys.exit(1)
+            
+        circuit = health.get("circuit")
+        valid_circuits = {"closed", "open", "half-open"}
+        if circuit is not None and circuit not in valid_circuits:
+            print(f"Error: Model '{model_id}' has invalid circuit state: '{circuit}'")
+            sys.exit(1)
+            
+        history = health.get("history")
+        if history is not None:
+            if not isinstance(history, list):
+                print(f"Error: Model '{model_id}' has invalid 'history' type. Expected list.")
+                sys.exit(1)
+            for event_idx, event in enumerate(history):
+                if not isinstance(event, dict):
+                    print(f"Error: Model '{model_id}' history event at index {event_idx} is not a dictionary.")
+                    sys.exit(1)
+                if "timestamp" not in event or "status" not in event or "latency_ms" not in event:
+                    print(f"Error: Model '{model_id}' history event at index {event_idx} is missing required fields.")
+                    sys.exit(1)
+                    
+        success_rate = health.get("success_rate")
+        if success_rate is not None and (not isinstance(success_rate, (int, float)) or not (0.0 <= success_rate <= 1.0)):
+            print(f"Error: Model '{model_id}' has invalid 'success_rate': {success_rate}")
+            sys.exit(1)
+            
     if duplicates_model_id:
         print(f"Error: Duplicate model IDs found: {', '.join(duplicates_model_id)}")
         sys.exit(1)

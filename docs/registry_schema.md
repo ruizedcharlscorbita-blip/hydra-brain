@@ -84,22 +84,53 @@ Future-proof block for task capability tagging, currently initialized to `null`.
 }
 ```
 
----
+## 4. Health Schema
 
-## 4. Health Schema (Placeholder)
-
-Future-proof block for latency and status tracking, currently initialized to `"unknown"` and `null`.
+Tracks model responsiveness, latencies, moving-window success rates, and circuit breaker status.
 
 ```json
 "health": {
     "status": "unknown",
     "latency_ms": null,
-    "success_rate": null,
-    "last_checked": null
+    "success_rate": 0.0,
+    "last_checked": null,
+    "consecutive_successes": 0,
+    "consecutive_failures": 0,
+    "history": [],
+    "average_tokens_per_second": null,
+    "last_error": null,
+    "circuit": "closed",
+    "opened_at": null,
+    "retry_after": null
 }
 ```
 
----
+### Health Properties
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `status` | `string` | Current availability. Values: `"unknown"`, `"healthy"`, `"rate_limited"`, `"degraded"`, `"unavailable"`. |
+| `latency_ms` | `integer` | Completion API roundtrip response latency in milliseconds, or `null`. |
+| `success_rate` | `number` | Moving-window success average computed over the last 10 checks (between `0.0` and `1.0`). |
+| `last_checked` | `string (ISO-8601)` | Timestamp of the last health ping. |
+| `consecutive_successes` | `integer` | Continuous successful checks since the last failure state. |
+| `consecutive_failures` | `integer` | Continuous failed checks since the last healthy state. |
+| `history` | `array of objects` | Rolling list tracking the last 10 check events. Each event is a structured object (see table below). |
+| `average_tokens_per_second` | `integer` | Throughput estimate, or `null`. |
+| `last_error` | `string` | Error description if status is not `"healthy"`, or `null`. |
+| `circuit` | `string` | Circuit state. Values: `"closed"` (active), `"open"` (tripped/cooldown), `"half-open"` (testing probe). |
+| `opened_at` | `string (ISO-8601)` | Timestamp when the circuit tripped to `"open"`, or `null`. |
+| `retry_after` | `string (ISO-8601)` | Timestamp after which a `"half-open"` check probe will be allowed, or `null`. |
+
+### History Event Object Schema
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `timestamp` | `string (ISO-8601)` | Execution timestamp of this specific check. |
+| `status` | `string` | Health status output of the check. |
+| `latency_ms` | `integer` | API response latency in milliseconds. |
+| `http_status` | `integer` | HTTP response code returned by the endpoint (e.g. `200`, `429`, `502`), or `null`. |
+| `error` | `string` | Error message captured if the check failed, or `null`. |
 
 ## 5. Sample Registry JSON Structure
 

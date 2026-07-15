@@ -48,8 +48,16 @@ def save_registry(models: List[Dict[str, Any]]) -> None:
             model["health"] = {
                 "status": "unknown",
                 "latency_ms": None,
-                "success_rate": None,
-                "last_checked": None
+                "success_rate": 0.0,
+                "last_checked": None,
+                "consecutive_successes": 0,
+                "consecutive_failures": 0,
+                "history": [],
+                "average_tokens_per_second": None,
+                "last_error": None,
+                "circuit": "closed",
+                "opened_at": None,
+                "retry_after": None
             }
         if "free" not in model:
             model["free"] = True
