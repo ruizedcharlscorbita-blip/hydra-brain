@@ -35,15 +35,20 @@ def save_registry(models: List[Dict[str, Any]]) -> None:
             h = hashlib.sha256(model_id.encode("utf-8")).hexdigest()[:8]
             model["hydra_id"] = f"hydra-or-{h}"
             
-        if "capabilities" not in model:
-            model["capabilities"] = {
-                "coding": None,
-                "reasoning": None,
-                "vision": None,
-                "tool_calling": None,
-                "json_output": None,
-                "streaming": None
-            }
+        caps = model.get("capabilities", {})
+        if not isinstance(caps, dict):
+            caps = {}
+        model["capabilities"] = {
+            "coding": caps.get("coding") if isinstance(caps.get("coding"), int) else 0,
+            "reasoning": caps.get("reasoning") if isinstance(caps.get("reasoning"), int) else 0,
+            "writing": caps.get("writing") if isinstance(caps.get("writing"), int) else 0,
+            "analysis": caps.get("analysis") if isinstance(caps.get("analysis"), int) else 0,
+            "vision": caps.get("vision") if isinstance(caps.get("vision"), int) else 0,
+            "chat": caps.get("chat") if isinstance(caps.get("chat"), int) else 0,
+            "tool_calling": caps.get("tool_calling") if isinstance(caps.get("tool_calling"), int) else 0,
+            "json_output": caps.get("json_output") if isinstance(caps.get("json_output"), int) else 0,
+            "streaming": caps.get("streaming") if isinstance(caps.get("streaming"), int) else 0
+        }
         if "health" not in model:
             model["health"] = {
                 "status": "unknown",
@@ -59,6 +64,9 @@ def save_registry(models: List[Dict[str, Any]]) -> None:
                 "opened_at": None,
                 "retry_after": None
             }
+        if "capability_confidence" not in model:
+            model["capability_confidence"] = "none"
+            
         if "free" not in model:
             model["free"] = True
             

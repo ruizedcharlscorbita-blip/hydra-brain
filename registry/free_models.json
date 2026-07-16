@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-16T00:54:16.858376",
+  "generated_at": "2026-07-16T01:05:02.004483",
   "provider": "OpenRouter",
   "models": [
     {
@@ -54,12 +54,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 3,
+        "writing": 4,
+        "analysis": 3,
+        "vision": 0,
+        "chat": 5,
+        "tool_calling": 2,
+        "json_output": 3,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -103,7 +106,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-9282d847",
@@ -159,12 +163,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 5,
+        "reasoning": 4,
+        "writing": 2,
+        "analysis": 3,
+        "vision": 0,
+        "chat": 2,
+        "tool_calling": 4,
+        "json_output": 3,
+        "streaming": 4
       },
       "health": {
         "status": "healthy",
@@ -208,7 +215,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-6f0343c2",
@@ -271,12 +279,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 4,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 4,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -320,7 +331,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-f8b3da0d",
@@ -375,12 +387,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 4,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 4,
+        "chat": 5,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -424,7 +439,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-3c51f8f4",
@@ -475,12 +491,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 0,
+        "reasoning": 0,
+        "writing": 0,
+        "analysis": 0,
+        "vision": 2,
+        "chat": 0,
+        "tool_calling": 0,
+        "json_output": 0,
+        "streaming": 0
       },
       "health": {
         "status": "healthy",
@@ -524,7 +543,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-d1194e06",
@@ -575,12 +595,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 0,
+        "reasoning": 0,
+        "writing": 0,
+        "analysis": 0,
+        "vision": 2,
+        "chat": 0,
+        "tool_calling": 0,
+        "json_output": 0,
+        "streaming": 0
       },
       "health": {
         "status": "healthy",
@@ -624,7 +647,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-463f7056",
@@ -675,12 +699,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 2,
+        "reasoning": 2,
+        "writing": 3,
+        "analysis": 2,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 1,
+        "json_output": 2,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -724,7 +751,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-bf4eef56",
@@ -777,12 +805,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 4,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 0,
+        "chat": 5,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -826,7 +857,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-a7624919",
@@ -877,12 +909,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 4,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 5,
+        "json_output": 5,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -926,7 +961,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-227c41cf",
@@ -978,12 +1014,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 4,
+        "writing": 3,
+        "analysis": 3,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 3,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1027,7 +1066,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-0c33da05",
@@ -1082,12 +1122,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 5,
+        "writing": 3,
+        "analysis": 4,
+        "vision": 4,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 3,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1131,7 +1174,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-0436b9db",
@@ -1186,12 +1230,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 5,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1235,7 +1282,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-08c7a7c7",
@@ -1288,12 +1336,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 5,
+        "reasoning": 5,
+        "writing": 4,
+        "analysis": 5,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 5,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1337,7 +1388,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-1f8c4734",
@@ -1388,12 +1440,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 0,
+        "reasoning": 1,
+        "writing": 0,
+        "analysis": 3,
+        "vision": 2,
+        "chat": 0,
+        "tool_calling": 0,
+        "json_output": 3,
+        "streaming": 2
       },
       "health": {
         "status": "healthy",
@@ -1437,7 +1492,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-4c2329ee",
@@ -1491,12 +1547,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 4,
+        "writing": 3,
+        "analysis": 4,
+        "vision": 4,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 3,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1540,7 +1599,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-db76cae1",
@@ -1594,12 +1654,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 4,
+        "writing": 3,
+        "analysis": 3,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1643,7 +1706,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-dab560b5",
@@ -1705,12 +1769,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 4,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -1754,7 +1821,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-3b904073",
@@ -1817,12 +1885,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 3,
+        "writing": 3,
+        "analysis": 3,
+        "vision": 3,
+        "chat": 3,
+        "tool_calling": 3,
+        "json_output": 3,
+        "streaming": 4
       },
       "health": {
         "status": "healthy",
@@ -1866,7 +1937,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-856c3634",
@@ -1916,12 +1988,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 5,
+        "reasoning": 4,
+        "writing": 2,
+        "analysis": 3,
+        "vision": 0,
+        "chat": 3,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 4
       },
       "health": {
         "status": "healthy",
@@ -1965,7 +2040,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-639c7bbc",
@@ -2015,12 +2091,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 3,
+        "writing": 2,
+        "analysis": 2,
+        "vision": 0,
+        "chat": 2,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 4
       },
       "health": {
         "status": "healthy",
@@ -2064,7 +2143,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-2ae8a99d",
@@ -2117,12 +2197,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 5,
+        "reasoning": 4,
+        "writing": 3,
+        "analysis": 3,
+        "vision": 0,
+        "chat": 3,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "unavailable",
@@ -2159,7 +2242,8 @@
         "circuit": "open",
         "opened_at": "2026-07-16T00:54:15.594268",
         "retry_after": "2026-07-16T01:04:15.594268"
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-57f0825a",
@@ -2214,12 +2298,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 4,
+        "reasoning": 5,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "unavailable",
@@ -2256,7 +2343,8 @@
         "circuit": "open",
         "opened_at": "2026-07-16T00:54:15.605260",
         "retry_after": "2026-07-16T01:04:15.605260"
-      }
+      },
+      "capability_confidence": "high"
     },
     {
       "hydra_id": "hydra-or-0f17340e",
@@ -2315,12 +2403,15 @@
       "source": "openrouter",
       "free": true,
       "capabilities": {
-        "coding": null,
-        "reasoning": null,
-        "vision": null,
-        "tool_calling": null,
-        "json_output": null,
-        "streaming": null
+        "coding": 3,
+        "reasoning": 4,
+        "writing": 4,
+        "analysis": 4,
+        "vision": 0,
+        "chat": 4,
+        "tool_calling": 4,
+        "json_output": 4,
+        "streaming": 5
       },
       "health": {
         "status": "healthy",
@@ -2364,7 +2455,8 @@
         "circuit": "closed",
         "opened_at": null,
         "retry_after": null
-      }
+      },
+      "capability_confidence": "high"
     }
   ]
 }

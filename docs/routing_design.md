@@ -1,5 +1,8 @@
 # Hydra Intelligent Router v0.3.0 Architectural Design
 
+> **Status: Implemented — Sprint 3 Complete**
+> All components described in this document (`core/intent.py`, `registry/capability_registry.py`, `core/policy.py`, `core/router.CapabilityRouter`, `config/router_policy.json`) have been built and are passing 24/24 tests.
+
 This document outlines the architectural specifications, schemas, interfaces, and mathematical scoring functions for the capability-aware routing layer of Hydra Brain v0.3.0.
 
 ---
@@ -125,9 +128,24 @@ Normalized cost penalty to encourage cost-efficiency (for free models, $C_{cost}
 
 ---
 
-## 4. Policy Configuration Settings (`config/router_policy.json`)
+## 4. Confidence Multiplier
 
-To enable seamless router tuning without code changes, weights are loaded from a configuration policy:
+A multiplier is applied to `S_cap` to discount models whose capability scores were inferred rather than hand-authored:
+
+| `capability_confidence` | Multiplier |
+| :--- | :--- |
+| `"high"` | `1.00` — exact profile match |
+| `"medium"` | `0.90` — family match |
+| `"low"` | `0.75` — signal inference |
+| `"none"` | `0.50` — no signals found |
+
+This means a model with `confidence: "low"` and a raw `S_cap` of `0.80` will contribute `0.80 × 0.75 = 0.60` to its composite score. High-confidence profiles are always preferred when intent is equal.
+
+---
+
+## 5. Policy Configuration Settings (`config/router_policy.json`)
+
+All scoring weights, confidence multipliers, and policy rules are loaded from a configuration file at runtime. No code changes are required for rebalancing:
 
 ```json
 {
@@ -135,6 +153,17 @@ To enable seamless router tuning without code changes, weights are loaded from a
     "capability": 0.50,
     "latency": 0.25,
     "reliability": 0.25
+  },
+  "confidence_multipliers": {
+    "high": 1.00,
+    "medium": 0.90,
+    "low": 0.75,
+    "none": 0.50
+  },
+  "policy": {
+    "exclude_unhealthy_statuses": ["unavailable", "degraded", "rate_limited"],
+    "exclude_open_circuit": true,
+    "min_capability_score": 1
   },
   "circuit_breaker": {
     "failure_threshold": 3,

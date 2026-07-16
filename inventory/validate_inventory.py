@@ -150,6 +150,19 @@ def run_validation() -> None:
             print(f"Error: Model '{model_id}' has missing or invalid 'capabilities' block.")
             sys.exit(1)
             
+        required_caps = {
+            "coding", "reasoning", "writing", "analysis", "vision", 
+            "chat", "tool_calling", "json_output", "streaming"
+        }
+        for cap_key in required_caps:
+            if cap_key not in capabilities:
+                print(f"Error: Model '{model_id}' is missing capability: '{cap_key}'")
+                sys.exit(1)
+            score = capabilities[cap_key]
+            if not isinstance(score, int) or not (0 <= score <= 5):
+                print(f"Error: Model '{model_id}' has invalid score for capability '{cap_key}': {score}. Expected integer between 0 and 5.")
+                sys.exit(1)
+            
         # Validate health block
         health = model.get("health")
         if not isinstance(health, dict):

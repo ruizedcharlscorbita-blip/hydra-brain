@@ -274,22 +274,33 @@ def run_sync() -> None:
             # Generate deterministic stable Hydra ID
             hydra_id = generate_stable_id(model_id)
             
-            # Capabilities Placeholder
+            # Capabilities - initialized to 0 (to be populated by Capability Scanner in v0.3.0)
             capabilities = {
-                "coding": None,
-                "reasoning": None,
-                "vision": None,
-                "tool_calling": None,
-                "json_output": None,
-                "streaming": None
+                "coding": 0,
+                "reasoning": 0,
+                "writing": 0,
+                "analysis": 0,
+                "vision": 0,
+                "chat": 0,
+                "tool_calling": 0,
+                "json_output": 0,
+                "streaming": 0
             }
             
             # Health Placeholder
             health = {
                 "status": "unknown",
                 "latency_ms": None,
-                "success_rate": None,
-                "last_checked": None
+                "success_rate": 0.0,
+                "last_checked": None,
+                "consecutive_successes": 0,
+                "consecutive_failures": 0,
+                "history": [],
+                "average_tokens_per_second": None,
+                "last_error": None,
+                "circuit": "closed",
+                "opened_at": None,
+                "retry_after": None
             }
             
             free_models_temp.append({
@@ -321,6 +332,15 @@ def run_sync() -> None:
     free_models_temp = sorted(free_models_temp, key=lambda x: x["model_id"])
     
     print(f"{len(free_models_temp)} free models identified\n")
+    print("Scanning capabilities...\n")
+    
+    # Run capability scanner to populate scores from profiles / signal inference
+    try:
+        from inventory.capability_scanner import scan_all
+        free_models_temp = scan_all(free_models_temp)
+    except Exception as e:
+        print(f"Warning: Capability scanner failed, scores will default to 0: {e}")
+    
     print("Writing registry...\n")
     
     # Load old registry to compute diffs

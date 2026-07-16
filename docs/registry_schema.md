@@ -69,20 +69,57 @@ Each entry in the `models` list is a normalized JSON object representing a speci
 
 ---
 
-## 3. Capabilities Schema (Placeholder)
+## 3. Capabilities Schema
 
-Future-proof block for task capability tagging, currently initialized to `null`.
+Enables task-specific skill tagging for capability-aware intelligent routing. Each capability is rated as an integer score from `0` (unsupported) to `5` (expert).
 
 ```json
 "capabilities": {
-    "coding": null,
-    "reasoning": null,
-    "vision": null,
-    "tool_calling": null,
-    "json_output": null,
-    "streaming": null
+    "coding": 0,
+    "reasoning": 0,
+    "writing": 0,
+    "analysis": 0,
+    "vision": 0,
+    "chat": 0,
+    "tool_calling": 0,
+    "json_output": 0,
+    "streaming": 0
 }
 ```
+
+### Capability Scoring Scale
+
+| Score | Rating | Description |
+| :--- | :--- | :--- |
+| `0` | Unsupported | Model cannot process this capability. |
+| `1-2` | Basic | Handles simple queries or basic tasks. |
+| `3-4` | Good | Competent execution of production tasks. |
+| `5` | Expert | State-of-the-art capability. |
+
+### Capability Dimensions
+
+| Field | Type | Description |
+| :--- | :--- | :--- |
+| `coding` | `integer` | Code generation, editing, framework assistance, and debugging. |
+| `reasoning` | `integer` | Complex mathematical, logical, and chain-of-thought problems. |
+| `writing` | `integer` | Storytelling, creative writing, copywriting, and prose generation. |
+| `analysis` | `integer` | Text summarization, data extraction, and document processing. |
+| `chat` | `integer` | Conversational dialogue, roleplay, and open-ended conversation. |
+| `vision` | `integer` | Multi-modal image analysis, OCR, and visual parsing. |
+| `tool_calling` | `integer` | Structural function parsing and tool invocation. |
+| `json_output` | `integer` | JSON output schema formatting and validation. |
+| `streaming` | `integer` | Token streaming support. |
+
+### Capability Confidence
+
+Each model carries a `capability_confidence` field at the model root level (sibling of `capabilities`) that indicates how the capability scores were determined.
+
+| Value | Source | Description |
+| :--- | :--- | :--- |
+| `"high"` | Exact profile match | Model ID found directly in `capabilities/model_profiles.json > models`. Scores are hand-authored. |
+| `"medium"` | Family match | Model family slug matched a family entry in `> families`. Scores are family-level profiles. |
+| `"low"` | Signal inference | No profile exists; scores inferred from modalities, supported parameters, and description keywords. |
+| `"none"` | No signals | Model is unrecognized and carries insufficient metadata for inference. All scores remain `0`. |
 
 ## 4. Health Schema
 

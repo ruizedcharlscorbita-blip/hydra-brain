@@ -1,0 +1,36 @@
+{
+  "description": "Hydra Brain v0.5.0 — Orchestration and Router Policy Configuration",
+  "weights": {
+    "capability": 0.50,
+    "latency": 0.25,
+    "reliability": 0.25
+  },
+  "confidence_multipliers": {
+    "high": 1.00,
+    "medium": 0.90,
+    "low": 0.75,
+    "none": 0.50
+  },
+  "latency": {
+    "neutral_default_ms": 1000,
+    "max_penalty_ms": 2000
+  },
+  "reliability": {
+    "neutral_default": 0.5,
+    "unknown_success_rate": 0.5
+  },
+  "policy": {
+    "exclude_unhealthy_statuses": ["unavailable", "degraded", "rate_limited"],
+    "exclude_open_circuit": true,
+    "min_capability_score": 1
+  },
+  "circuit_breaker": {
+    "failure_threshold": 3,
+    "cooldown_seconds": 600
+  },
+  "confidence_weights": {
+    "consensus": 0.40,
+    "verification": 0.40,
+    "routing": 0.20
+  }
+}
